@@ -1,0 +1,488 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #f4f4f4; /* Light gray background for the whole page */
+}
+
+/* Header Styles */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #4CAF50; /* Green color */
+    padding: 10px 20px;
+    color: white;
+}
+
+header .logo-container {
+    display: flex;
+    align-items: center;
+    text-decoration: none; /* Remove underline */
+}
+
+header .logo-text {
+    font-size: 1.5em; /* Adjust font size if necessary */
+    font-weight: bold; /* Ensure the text is bold */
+    color: white; /* Logo text color */
+    margin-right: 10px; /* Space between logo text and image */
+}
+
+
+
+
+/* Navigation Styles */
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Hero Section Styles */
+.hero {
+    background-image: url('Images/header-solar.webp'); /* Path to your image */
+    background-size: cover;
+    background-position: center;
+    color: #000000;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.hero h1 {
+    font-size: 2.5em;
+    margin: 0 0 20px;
+}
+
+.hero p {
+    font-size: 1.2em;
+}
+
+.hero button {
+    margin: 10px;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+/* Map Section Styles */
+.map-section {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 50px 20px;
+    background-color: #f9f9f9; /* Light gray background for better contrast */
+}
+
+#map-container {
+    flex: 1 1 50%;
+    min-width: 300px;
+    max-width: 600px;
+}
+
+#map-container iframe {
+    width: 100%;
+    height: 100%;  /* Full height to fill the container */
+    border-radius: 10px;
+    border: 0;
+}
+
+#map-text {
+    flex: 1 1 50%;
+    min-width: 300px;
+    padding: 20px;
+    background: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.text-content {
+    max-width: 600px; /* Limit the width for better readability */
+    margin: 0 auto; /* Center the content */
+}
+
+#map-text h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#map-text h2 i {
+    margin-left: 10px; /* Space between the title and icon */
+    color: #4CAF50; /* Green color for the icon */
+}
+
+#map-text p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+#map-text ul {
+    list-style-type: square; /* Square bullets for better visibility */
+    margin-bottom: 20px;
+    padding-left: 20px;
+}
+
+#map-text ul li {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.zip-code-container {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.zip-code-container input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+.zip-code-container button {
+    padding: 10px 20px;
+    background-color: #4CAF50; /* Green background for button */
+    border: none;
+    color: white;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-left: 10px;
+}
+
+.zip-code-container button:hover {
+    background-color: #45a049; /* Slightly darker green on hover */
+}
+
+/* Problem & Opportunity Section Styles */
+.problem-opportunity {
+    background-color: #ffffff; /* White background for this section */
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.problem-opportunity h2 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center; /* Center the title */
+    align-items: center;
+}
+
+.problem-opportunity h2 i {
+    margin-left: 10px; /* Space between the title and icon */
+    color: #4CAF50; /* Green color for the icon */
+}
+
+.problem-opportunity .content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.problem-opportunity .problem,
+.problem-opportunity .opportunity {
+    flex: 1 1 45%;
+    min-width: 300px;
+    margin: 10px;
+    padding: 20px;
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    transition: transform 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.problem-opportunity .problem:hover,
+.problem-opportunity .opportunity:hover {
+    transform: scale(1.05); /* Slightly scales up the box on hover */
+}
+
+.problem-opportunity .problem h3,
+.problem-opportunity .opportunity h3 {
+    font-size: 2em;
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Center the title */
+    margin-bottom: 15px;
+}
+
+.problem-opportunity .problem h3 i,
+.problem-opportunity .opportunity h3 i {
+    margin-left: 10px; /* Space between the title and icon */
+    color: #4CAF50; /* Green color for the icon */
+}
+
+/* Project Description Section Styles */
+.project {
+    background-color: #ffffff; /* White background for this section */
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.project h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.project p {
+    max-width: 800px;
+    margin: 0 auto 20px;
+    font-size: 1.1em;
+    line-height: 1.6;
+}
+
+.project img {
+    display: block;
+    margin: 20px auto;
+    width: 100%;
+    max-width: 1200px;
+    height: auto;
+    border: 5px solid #ddd;
+    border-radius: 10px;
+}
+
+/* Services Section Styles */
+.services {
+    background-color: #ffffff; /* White background for this section */
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.services h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.services ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.services ul li {
+    background: #f9f9f9;
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    text-align: left;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Testimonials Section Styles */
+.testimonials {
+    background-color: #ffffff; /* White background for this section */
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.testimonials h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.testimonials blockquote {
+    background: #f9f9f9;
+    margin: 20px auto;
+    padding: 20px;
+    border-left: 5px solid #4CAF50;
+    max-width: 800px;
+    font-style: italic;
+}
+
+/* Encouragement Section Styles */
+.encouragement {
+    background-color: #4CAF50; /* Green background */
+    color: white;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.encouragement h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.encouragement p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+.encouragement button {
+    padding: 10px 20px;
+    background-color: #ffffff; /* White button */
+    border: none;
+    color: #4CAF50; /* Green text */
+    font-size: 1em;
+    cursor: pointer;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #4CAF50; /* Green background */
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* About Section Styles */
+:root {
+    --about-header-height: 400px; /* Default height for desktop view */
+    --title-height: 80px; /* Height for title container */
+}
+
+.about {
+    background-color: #ffffff; /* White background for the about section */
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.title-container {
+    position: relative; /* Ensure title is positioned relative to its container */
+    margin-bottom: -31px; /* Negative margin to bring the title closer to the image */
+    z-index: 2; /* Ensure title is above the image */
+}
+
+.title-container h2 {
+    color: #4CAF50; /* Green color for the title */
+    font-size: 2.5em;
+    margin: 0;
+    padding: 10px 20px;
+    border-radius: 40px; /* Rounded corners for the background */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3); /* Text shadow for better readability */
+}
+
+.about-header {
+    position: relative;
+    background-image: url('Images/Group-photo-Crop2.jpeg'); /* Path to your image */
+    background-size: cover; /* Ensure the image covers the container */
+    background-position: center top; /* Show the top of the image */
+    background-repeat: no-repeat; /* Prevent repeating */
+    height: var(--about-header-height); /* Use the CSS variable for height */
+    border: 10px solid #4CAF50; /* Green border around the header */
+    border-radius: 15px; /* Rounded corners for the border */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow for a 3D effect */
+    margin: 20px 0; /* Space above and below the header */
+    overflow: hidden; /* Ensure content doesn't overflow the border */
+}
+
+.about-content {
+    background: #ffffff;
+    padding: 50px 20px;
+    color: #333;
+}
+
+.about p {
+    max-width: 800px;
+    margin: 0 auto 20px;
+    font-size: 1.2em;
+    line-height: 1.6;
+}
+
+.about h3 {
+    font-size: 2em;
+    margin: 30px 0 20px;
+    color: #333; /* Darker color for section headings */
+}
+
+.team {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; /* Space between team members */
+}
+
+.team-member {
+    flex: 1 1 200px;
+    max-width: 300px;
+    padding: 20px;
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    text-align: center;
+}
+
+.team-member i {
+    font-size: 3em;
+    color: #4CAF50; /* Green color for icons */
+    margin-bottom: 15px;
+}
+
+.team-member h4 {
+    font-size: 1.5em;
+    margin: 10px 0;
+}
+
+.team-member p {
+    font-size: 1em;
+    line-height: 1.6;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    :root {
+        --about-header-height: 300px; /* Adjust height for tablets and smaller screens */
+        --title-height: 60px; /* Adjust title height for smaller screens */
+    }
+
+    .title-container h2 {
+        font-size: 2em; /* Adjust font size for smaller screens */
+        padding: 10px;
+        margin-bottom: -30px; /* Adjust overlap for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    :root {
+        --about-header-height: 250px; /* Further adjust height for very small screens */
+        --title-height: 50px; /* Further adjust title height for very small screens */
+    }
+
+    .title-container h2 {
+        font-size: 1.5em; /* Further adjust font size */
+        padding: 5px;
+        margin-bottom: -20px; /* Further adjust overlap for very small screens */
+    }
+}
+
+
+
+/* Header and Footer Adjustments for About Page */
+header {
+    background-color: #4CAF50; /* Green color */
+}
+
+footer {
+    background-color: #4CAF50; /* Green background */
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
