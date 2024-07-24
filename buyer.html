@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buyer - Amarna Energy</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        header {
+            background-color: #4CAF50;
+            color: #fff;
+            padding: 15px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo-container {
+            display: flex;
+            align-items: center;
+            color: #fff;
+            text-decoration: none;
+            font-size: 1.5em;
+            font-weight: bold;
+        }
+        .logo-text {
+            margin-right: 10px;
+        }
+        .logo-image {
+            font-size: 1.5em;
+        }
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+        nav ul li {
+            margin-left: 20px;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1em;
+            transition: color 0.3s;
+        }
+        nav ul li a:hover {
+            color: #e2e2e2;
+        }
+        .buyer {
+            text-align: center;
+            padding: 60px 20px;
+        }
+        .buyer h2 {
+            font-size: 2.5em;
+            margin-bottom: 30px;
+            color: #4CAF50;
+        }
+        .buyer p {
+            font-size: 1.2em;
+            margin-bottom: 20px;
+            color: #555;
+        }
+        .buyer form {
+            max-width: 600px;
+            margin: 0 auto;
+            text-align: left;
+        }
+        .buyer label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+        .buyer input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .buyer button {
+            background-color: #4CAF50;
+            color: #fff;
+            border: none;
+            padding: 15px 30px;
+            font-size: 1.1em;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            width: 100%;
+        }
+        .buyer button:hover {
+            background-color: #45A049;
+        }
+        footer {
+            background-color: #4CAF50;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="index.html" class="logo-container">
+            <span class="logo-text">Amarna Energy</span>
+            <i class="fas fa-sun logo-image"></i>
+        </a>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="start.html">Start</a></li>
+                <li><a href="about.html">About Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="buyer">
+        <h2>Join the Amarna Energy Community</h2>
+        <p>Are you interested in accessing affordable and clean solar energy? As a buyer, you can purchase surplus solar energy directly from local producers in California. Join us today to start saving on your energy bills and contribute to a sustainable future!</p>
+        <form>
+            <label for="location">Location</label>
+            <input type="text" id="location" name="location" placeholder="Enter your city and state">
+
+            <label for="energy-needs">Monthly Energy Needs (kWh)</label>
+            <input type="number" id="energy-needs" name="energy-needs" placeholder="Estimated monthly consumption">
+
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Amarna Energy. All rights reserved.</p>
+    </footer>
+</body>
+</html>
