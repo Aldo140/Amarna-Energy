@@ -25,17 +25,20 @@
                 <li><a href="about.html">About Us</a></li>
             </ul>
         </nav>
+        <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">
+            <i class="fas fa-moon"></i>
+        </button>
     </header>
 
     <!-- Home Section -->
-    <section class="hero">
+    <section class="hero reveal">
         <h1>Welcome to Amarna Energy</h1>
         <p>Transforming Energy and building communities</p>
         <button onclick="location.href='start.html'">Start Now</button>
     </section>
     
 <!-- Problem and Opportunity Section -->
-<section id="problem-opportunity" class="problem-opportunity">
+<section id="problem-opportunity" class="problem-opportunity reveal">
     <h2>Addressing Energy Waste and Embracing New Opportunities</h2>
     <div class="content">
         <div class="problem">
@@ -51,7 +54,7 @@
 
     
 <!-- Map Section -->
-<section id="map-section" class="map-section">
+<section id="map-section" class="map-section reveal">
     <div id="map-container">
         <div id="map" style="width: 100%; height: 100%;"></div>
     </div>
@@ -82,14 +85,14 @@
 
 
     <!-- Project Description Section -->
-    <section id="project" class="project">
+    <section id="project" class="project reveal">
         <h2>About Our Project</h2>
         <p>Amarna Energy is dedicated to revolutionizing the way we use and share energy in California. Our project focuses on optimizing solar energy production and facilitating the sharing of surplus energy among community members. By connecting solar energy producers with local consumers, we aim to reduce energy waste, lower costs, and promote sustainable living.</p>
         <img src="Images/Community-Solar.jpg" alt="Community Solar Project">
     </section>
 
     <!-- Services Section -->
-    <section id="services" class="services">
+    <section id="services" class="services reveal">
         <h2>Our Services</h2>
         <ul>
             <li>Solar Energy Production: Helping homeowners and businesses install and maintain solar panels.</li>
@@ -100,7 +103,7 @@
     </section>
 
 <!-- Testimonials Section -->
-<section id="testimonials" class="testimonials">
+<section id="testimonials" class="testimonials reveal">
     <h2>Testimonials</h2>
     <blockquote>
         <p>"Amarna Energy is fantastic! I love being part of a community focused on clean energy. Plus, making money from energy that would have been wasted is a no-brainer." - Alex M., California</p>
@@ -112,7 +115,7 @@
 
     
     <!-- Encouragement Section -->
-    <section class="encouragement">
+    <section class="encouragement reveal">
         <h2>Ready to start saving and join a community?</h2>
         <p>Join us at Amarna Energy and be a part of a sustainable future. Save money, share energy, and make a positive impact on the environment.</p>
         <button onclick="location.href='start.html'">Start Now</button>
@@ -150,6 +153,8 @@
     }
 </script>
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCSrS46o9Nty0LECh788QJ1JoVb2xOSKb0&amp;callback=initMap" async defer></script>
+
+<script src="script.js"></script>
 
     
 
