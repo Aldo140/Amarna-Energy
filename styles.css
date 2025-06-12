@@ -4,6 +4,20 @@
     --secondary-color: #009688;
     --accent-color: #1bb15c;
 }
+html {
+    scroll-behavior: smooth;
+}
+
+@keyframes fadeUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
+
 
 body {
     font-family: 'Open Sans', Arial, sans-serif;
@@ -59,10 +73,17 @@ nav ul li {
 nav ul li a {
     color: white;
     text-decoration: none;
+    padding: 5px 10px;
+    transition: color 0.3s, background-color 0.3s;
+}
+nav ul li a:hover {
+    background-color: rgba(255,255,255,0.2);
+    border-radius: 4px;
 }
 
 /* Hero Section Styles */
 .hero {
+    background-attachment: fixed;
     background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('Images/header-solar.webp');
     background-size: cover;
     background-position: center;
@@ -73,15 +94,18 @@ nav ul li a {
 }
 
 .hero h1 {
+    animation: fadeUp 1s ease-out;
     font-size: 2.5em;
     margin: 0 0 20px;
 }
 
 .hero p {
+    animation: fadeUp 1.5s ease-out;
     font-size: 1.2em;
 }
 
 .hero button {
+    animation: pulse 2s infinite;
     margin: 10px;
     padding: 12px 30px;
     background-color: var(--accent-color);
@@ -93,7 +117,30 @@ nav ul li a {
     cursor: pointer;
     box-shadow: 0 2px 6px rgba(0,0,0,0.3);
     transition: background-color 0.3s, transform 0.3s;
+/* Form Styles */
+form input, form select, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: inset 0 1px 2px rgba(0,0,0,0.1);
 }
+form button {
+    background-color: var(--accent-color);
+    color: #fff;
+    border: none;
+    padding: 12px 30px;
+    font-size: 1.1em;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+form button:hover {
+    background-color: #169449;
+    transform: translateY(-2px);
+}
+
 
 .hero button:hover {
     background-color: #169449;
@@ -393,6 +440,41 @@ nav ul li a {
     font-size: 1em;
     cursor: pointer;
 }
+/* Page Section Styles */
+.contact, .seller, .buyer, .start {
+    text-align: center;
+    padding: 60px 20px;
+}
+.contact h2, .seller h2, .buyer h2, .start h2 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+    color: var(--accent-color);
+}
+.social-media a {
+    color: var(--accent-color);
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 1.5em;
+    transition: color 0.3s;
+}
+.social-media a:hover {
+    color: #169449;
+}
+.options button {
+    background-color: var(--accent-color);
+    color: #fff;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.1em;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+.options button:hover {
+    background-color: #169449;
+    transform: translateY(-2px);
+}
+
 
 /* Footer Styles */
 footer {
@@ -525,14 +607,3 @@ footer {
 
 
 
-/* Header and Footer Adjustments for About Page */
-header {
-    background-color: #4CAF50; /* Green color */
-}
-
-footer {
-    background-color: #4CAF50; /* Green background */
-    color: white;
-    text-align: center;
-    padding: 20px;
-}
