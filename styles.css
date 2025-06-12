@@ -1,10 +1,20 @@
 /* General Styles */
+:root {
+    --primary-color: #1bb15c;
+    --secondary-color: #009688;
+    --accent-color: #1bb15c;
+}
+
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Open Sans', Arial, sans-serif;
     margin: 0;
     padding: 0;
     color: #333;
     background-color: #f4f4f4; /* Light gray background for the whole page */
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', Arial, sans-serif;
 }
 
 /* Header Styles */
@@ -12,9 +22,10 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #4CAF50; /* Green color */
-    padding: 10px 20px;
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    padding: 15px 25px;
     color: white;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
 }
 
 header .logo-container {
@@ -52,12 +63,13 @@ nav ul li a {
 
 /* Hero Section Styles */
 .hero {
-    background-image: url('Images/header-solar.webp'); /* Path to your image */
+    background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('Images/header-solar.webp');
     background-size: cover;
     background-position: center;
-    color: #000000;
+    color: #fff;
     text-align: center;
-    padding: 100px 20px;
+    padding: 120px 20px;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.6);
 }
 
 .hero h1 {
@@ -71,12 +83,21 @@ nav ul li a {
 
 .hero button {
     margin: 10px;
-    padding: 10px 20px;
-    background-color: #4CAF50;
+    padding: 12px 30px;
+    background-color: var(--accent-color);
     border: none;
     color: white;
-    font-size: 1em;
+    font-size: 1.1em;
+    font-weight: bold;
+    border-radius: 5px;
     cursor: pointer;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.hero button:hover {
+    background-color: #169449;
+    transform: translateY(-2px);
 }
 
 /* Map Section Styles */
