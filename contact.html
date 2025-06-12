@@ -6,125 +6,7 @@
     <title>Contact - Amarna Energy</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f9;
-            color: #333;
-        }
-        header {
-            background-color: #4CAF50;
-            color: #fff;
-            padding: 15px 20px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-        .logo-container {
-            display: flex;
-            align-items: center;
-            color: #fff;
-            text-decoration: none;
-            font-size: 1em;
-            font-weight: bold;
-        }
-        .logo-text {
-            margin-right: 10px;
-        }
-        .logo-image {
-            font-size: 1.5em;
-        }
-        nav ul {
-            list-style: none;
-            margin: 0;
-            padding: 0;
-            display: flex;
-        }
-        nav ul li {
-            margin-left: 20px;
-        }
-        nav ul li a {
-            color: #fff;
-            text-decoration: none;
-            font-size: 1em;
-            transition: color 0.3s;
-        }
-        nav ul li a:hover {
-            color: #e2e2e2;
-        }
-        .contact {
-            text-align: center;
-            padding: 60px 20px;
-        }
-        .contact h2 {
-            font-size: 2.5em;
-            margin-bottom: 30px;
-            color: #4CAF50;
-        }
-        .contact form {
-            max-width: 600px;
-            margin: 0 auto;
-            text-align: left;
-        }
-        .contact label {
-            display: block;
-            margin-bottom: 10px;
-            font-weight: bold;
-        }
-        .contact input,
-        .contact textarea {
-            width: 100%;
-            padding: 10px;
-            margin-bottom: 20px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-        }
-        .contact button {
-            background-color: #4CAF50;
-            color: #fff;
-            border: none;
-            padding: 15px 30px;
-            font-size: 1.1em;
-            border-radius: 5px;
-            cursor: pointer;
-            transition: background-color 0.3s;
-        }
-        .contact button:hover {
-            background-color: #45A049;
-        }
-        .contact-info {
-            margin-top: 40px;
-            color: #555;
-        }
-        .contact-info p {
-            font-size: 1.1em;
-            margin: 10px 0;
-        }
-        .social-media {
-            margin-top: 20px;
-        }
-        .social-media a {
-            color: #4CAF50;
-            text-decoration: none;
-            margin: 0 10px;
-            font-size: 1.5em;
-            transition: color 0.3s;
-        }
-        .social-media a:hover {
-            color: #45A049;
-        }
-        footer {
-            background-color: #4CAF50;
-            color: #fff;
-            text-align: center;
-            padding: 10px 0;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-        }
-    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&amp;family=Open+Sans:wght@300;400;600&amp;display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -139,9 +21,10 @@
                 <li><a href="about.html">About Us</a></li>
             </ul>
         </nav>
+        <button id="theme-toggle" aria-label="Toggle dark mode"><i class="fas fa-moon"></i></button>
     </header>
 
-    <section class="contact">
+    <section class="contact reveal">
         <h2>Contact Us</h2>
         <form>
             <label for="name">Name</label>
@@ -170,5 +53,6 @@
     <footer>
         <p>&copy; 2024 Amarna Energy. All rights reserved.</p>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>
